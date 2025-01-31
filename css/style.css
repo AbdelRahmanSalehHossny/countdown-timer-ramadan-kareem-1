@@ -67,7 +67,7 @@ span {
 }
 @media (max-width: 768px) {
     .container {
-        height: 80vh;
+        height: 100vh;
     }
     .box {
         width: 350px;
