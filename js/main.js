@@ -1,6 +1,6 @@
 function countDown() {
     let = refresh = setInterval(() => {
-      let futureDate = new Date("Feb 28, 2025, 11:59:59").getTime();
+      let futureDate = new Date("Feb 28, 2025, 23:59:59").getTime();
       let nowDate = new Date().getTime();
       let diff = futureDate - nowDate;
   
