@@ -158,7 +158,7 @@ span {
 }
 @media (max-width: 992px) {
     .container {
-        height: 86vh;
+        height: 80vh;
     }
     .box {
         margin: 10px 0;
