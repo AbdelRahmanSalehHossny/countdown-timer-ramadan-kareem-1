@@ -1,0 +1,438 @@
+/* background: linear-gradient(to right, #edede9 0%, #ffb703 25%, #fee440 50%);
+background: linear-gradient(to right, #f00,#ff0,#0ff,#0f0,#00f); */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.container {
+    background: url(../imges/ramadan\ kareem\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0;
+    width: 850px;
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.timer {
+    display: flex;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+    padding: 15px;
+}
+h1 {
+    font-size: 45px;
+    color: white;
+}
+h2.active {
+    background: linear-gradient(to right,#ff0,#f2d0a9,#fb5607);
+    background-size: 500%;
+    color: transparent;
+    animation: animate 3s linear infinite;
+    background-clip: text;
+}
+@keyframes animate {
+    100% {
+        transform: scale(1.5);
+    }
+    50% {
+        background-position: 100%;
+    }
+}
+h3,
+span {
+    margin: 10px;
+    color: white;
+}
+.box h3 {
+    font-size: 22px;
+}
+.box span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box {
+        width: 500px;
+        padding: 10px;
+        left: 50%;
+        top: 43%;
+    }
+    .box h1 {
+        font-size: 25px;
+    }
+    .box h3 {
+        font-size: 18px;
+    }
+    .box span {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .box {
+        left: 50%;
+        top: 42%;
+        padding: 12px;
+        width: 455px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+    padding: 5px;
+    }
+    .box h1 {
+        font-size: 20px;
+    }
+    .box h3 {
+        font-size: 17px;
+    }
+    .box span {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 320px;
+        top: 39%;
+        left: 50%;
+        padding: 5px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        padding: 3px;
+    }
+    .box h1 {
+        font-size: 15px;
+    }
+    .box h3 {
+        font-size: 14px;
+    }
+    .box span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .box {
+        width: 325px;
+        padding: 3px;
+        top: 40%;
+        left: 50%;
+    }
+    .box h1 {
+        font-size: 14px;
+    }
+    .box h3 {
+        font-size: 15px;
+    }
+    .box span {
+        font-size: 17px;
+    }
+}
+
+
+
+
+/* .container {
+    background: url(../imges/ramadan\ kareem\ 2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0;
+    width: 850px;
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+    top: -5%;
+}
+.timer {
+    display: flex;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+    padding: 15px;
+}
+h1 {
+    font-size: 45px;
+}
+h3,
+span {
+    margin: 10px;
+    color: #333;
+}
+.box h3 {
+    font-size: 22px;
+}
+.box span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box {
+        width: 500px;
+        padding: 10px;
+        left: 42%;
+        top: 0%;
+    }
+    .box h1 {
+        font-size: 25px;
+    }
+    .box h3 {
+        font-size: 18px;
+    }
+    .box span {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .box {
+        left: 2%;
+        top: 20%;
+        padding: 12px;
+        width: 455px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+    padding: 5px;
+    }
+    .box h1 {
+        font-size: 20px;
+    }
+    .box h3 {
+        font-size: 17px;
+    }
+    .box span {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 320px;
+        top: 18%;
+        left: 50%;
+        padding: 5px;
+        transform: translate(-50%, -50%);
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        padding: 3px;
+    }
+    .box h1 {
+        font-size: 15px;
+    }
+    .box h3 {
+        font-size: 14px;
+    }
+    .box span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .box {
+        width: 325px;
+        padding: 3px;
+        transform: translate(-50%, -50%);
+        top: 15%;
+        left: 50%;
+    }
+    .box h1 {
+        font-size: 14px;
+    }
+    .box h3 {
+        font-size: 15px;
+    }
+    .box span {
+        font-size: 17px;
+    }
+} */
+
+
+
+
+/* .container {
+    background: url(../imges/ramadan\ kareem\ 3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0;
+    width: 850px;
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.timer {
+    display: flex;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+    padding: 15px;
+}
+h1 {
+    font-size: 45px;
+    color: #232;
+}
+h3,
+span {
+    margin: 10px;
+    color: #232;
+}
+.box h3 {
+    font-size: 22px;
+}
+.box span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+    .box {
+        width: 500px;
+        padding: 10px;
+        left: 30%;
+        top: 4%;
+    }
+    .box h1 {
+        font-size: 25px;
+    }
+    .box h3 {
+        font-size: 18px;
+    }
+    .box span {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .box {
+        left: 31%;
+        top: 3%;
+        padding: 12px;
+        width: 455px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+    padding: 5px;
+    }
+    .box h1 {
+        font-size: 20px;
+    }
+    .box h3 {
+        font-size: 17px;
+    }
+    .box span {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 320px;
+        top: 0%;
+        left: 50%;
+        padding: 5px;
+    }
+    .days,
+    .hours,
+    .minutes,
+    .seconds {
+        padding: 3px;
+    }
+    .box h1 {
+        font-size: 15px;
+    }
+    .box h3 {
+        font-size: 14px;
+    }
+    .box span {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .box {
+        width: 325px;
+        padding: 3px;
+        top: 2%;
+        left: 50%;
+    }
+    .box h1 {
+        font-size: 14px;
+    }
+    .box h3 {
+        font-size: 15px;
+    }
+    .box span {
+        font-size: 17px;
+    }
+} */
+
+
+/* .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    animation: animate 10s linear infinite;
+    background-image: linear-gradient();
+    background-size: 400%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes animate {
+    100% {
+        background-position: 500%;
+    }
+} */
